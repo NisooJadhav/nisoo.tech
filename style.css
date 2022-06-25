@@ -228,6 +228,7 @@ a {
 
 .gradient {
     position: absolute;
+    background: #00000050;
     height: 100%;
     width: 100%;
     padding: 0;
