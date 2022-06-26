@@ -15,7 +15,8 @@ function bgChange() {
     element.style.background = "linear-gradient(to right, " + hexColor + ", " + hexColor2 + ")";
     element2.style.background = "linear-gradient(to right, " + hexColor + ", " + hexColor2 + ")";
     document.querySelector('.submit-btn').style.background = "linear-gradient(to right, " + hexColor + ", " + black + ")";
-    document.querySelector('.gradient-bg').style.background = "linear-gradient(to bottom, " + hexColor + ", " + 'black' + ")";
+    document.querySelector('.gradient-bg').style.background = "linear-gradient(to bottom, " + hexColor + ", " + black + ")";
+    document.querySelector('.gradient').style.background = "linear-gradient(to bottom, " + hexColor + ", " + black + ")";
 }
 window.addEventListener("load", bgChange)
 
