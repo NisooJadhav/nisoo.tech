@@ -7,13 +7,13 @@ function bgChange() {
     for (let i = 0; i <= 5; i++) {
         hexColor += hex[Math.floor(Math.random() * hex.length)]
     }
-    // let hexColor2 = '#';
-    // for (let i = 0; i <= 5; i++) {
-    //     hexColor2 += hex[Math.floor(Math.random() * hex.length)]
-    // }
-    let black = '#000'
-    element.style.background = "linear-gradient(to right, " + hexColor + ", " + black + ")";
-    element2.style.background = "linear-gradient(to right, " + hexColor + ", " + black + ")";
+     let hexColor2 = '#';
+     for (let i = 0; i <= 5; i++) {
+         hexColor2 += hex[Math.floor(Math.random() * hex.length)]
+    }
+    //let black = '#000'
+    element.style.background = "linear-gradient(to right, " + hexColor + ", " + hexColor2 + ")";
+    element2.style.background = "linear-gradient(to right, " + hexColor + ", " + hexColor2 + ")";
     document.querySelector('.submit-btn').style.background = "linear-gradient(to right, " + hexColor + ", " + black + ")";
     document.querySelector('.gradient-bg').style.background = "linear-gradient(to bottom, " + hexColor + ", " + 'black' + ")";
 }
