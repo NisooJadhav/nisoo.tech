@@ -524,6 +524,12 @@ div.submit {
     text-shadow: 1px 1px 5px #00000050;
 }
 
+.thankyou_message h2{
+    font-family:'inconsolata', monospace;
+    font-size:1.4rem;
+    opacity:0.5;
+}
+
 @media screen and (max-width:650px) {
     .brand {
         margin-left: 85px;
