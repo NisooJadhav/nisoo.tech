@@ -78,3 +78,8 @@ document.querySelector(".html").addEventListener("click", () => {
 particlesJS.load('particles-js', 'particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
+
+$('document').ready(function() {
+  const audio = new Audio("music.mp3" );
+  audio.play();
+});
