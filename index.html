@@ -28,15 +28,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body>
-<!--     <script>
-        $('document').ready(function() {
-  const audio = new Audio("source.mp3" );
-  audio.play();
-  });
-    </script> -->
-    
-    <audio src="music.mp3" autoplay="true"></audio>
+<body>    
+    <audio loop autoplay>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        document.querySelector("audio").volume = 0.5;
+    </script>
         
     <script src="particles.js"></script>
     <script>
