@@ -88,12 +88,13 @@ li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .nav li a {
   color: #00000050;
   text-shadow: 0;
+  text-decoration: none !important;
 }
 
 .nav li a:hover {
@@ -330,6 +331,11 @@ hr {
 .merng-icon {
   width: 200px;
   cursor: pointer;
+}
+
+.card-image{
+  width: 15rem;
+  padding-bottom:20px;
 }
 
 .cards-main,
@@ -648,7 +654,7 @@ div.submit {
   }
 
   .cards .card {
-    height: 100px !important;
+    height: 20rem;
   }
 
   .cards .card h4 {
