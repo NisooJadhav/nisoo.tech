@@ -1,19 +1,3 @@
-var hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-
-function bgChange() {
-  let hexColor = "#";
-  for (let i = 0; i <= 5; i++) {
-    hexColor += hex[Math.floor(Math.random() * hex.length)];
-  }
-  let black = "#000";
-  document.querySelector(".submit-btn").style.background =
-    "linear-gradient(to right, " + hexColor + ", " + black + ")";
-  document.body.style.background =
-    "linear-gradient(to bottom, " + hexColor + ", " + "black" + ")";
-}
-window.addEventListener("load", bgChange);
-
-//FOR TYPING
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -23,7 +7,6 @@ var TxtType = function (el, toRotate, period) {
   this.tick();
   this.isDeleting = false;
 };
-
 TxtType.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
@@ -50,7 +33,6 @@ TxtType.prototype.tick = function () {
     that.tick();
   }, delta);
 };
-
 window.onload = function () {
   var elements = document.getElementsByClassName("typewrite");
   for (var i = 0; i < elements.length; i++) {
@@ -65,11 +47,6 @@ window.onload = function () {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.10em solid #fff}";
   document.body.appendChild(css);
 };
-
 document.querySelector(".html").addEventListener("click", () => {
   document.querySelector(".cards").css("display");
 });
-
-// particlesJS.load("particles-js", "particles.json", function () {
-//   console.log("callback - particles.js config loaded");
-// });

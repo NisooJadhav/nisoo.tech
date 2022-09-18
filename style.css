@@ -109,7 +109,7 @@ a {
   align-items: flex-start;
   justify-content: space-evenly;
   flex-direction: column;
-  color: #fff;
+  /* color: #fff; */
   text-shadow: 1px 1px 1px #00000099;
   margin: 0;
   padding: 0;
@@ -271,7 +271,7 @@ hr {
 }
 
 .section-divider {
-  opacity: 1;
+  opacity: 0.2;
   width: 100%;
   padding: 5px;
   margin: 0;
@@ -333,9 +333,9 @@ hr {
   cursor: pointer;
 }
 
-.card-image{
+.card-image {
   width: 15rem;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
 
 .cards-main,
@@ -404,7 +404,7 @@ hr {
 }
 
 .footer-nav {
-  color: #00000050 !important;
+  /* color: #00000050 !important; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -413,11 +413,8 @@ hr {
   padding-bottom: 10px;
   bottom: 0;
   border: none;
-  background: rgba(255, 255, 255, 0.80);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 25px 25px 0% 0%;
+  background: #fff;
+  border-radius: 4rem 4rem 0% 0%;
 }
 
 .bottom-social {
@@ -444,7 +441,7 @@ hr {
 
 .social-icons img {
   width: 2.5rem;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .social-icons ul,
@@ -545,7 +542,7 @@ div.submit {
 .submit button {
   border-radius: 20px;
   box-shadow: 1px 1px 15px #ffffff50;
-  border: none;
+  border: 1px solid #666;
   font-size: 1.5rem;
   padding: 12px;
   width: 10rem;
@@ -567,7 +564,23 @@ div.submit {
 
 .submit-btn {
   color: #fff;
-  text-shadow: 1px 1px 5px #00000050;
+  text-shadow: 1px 1px 4px #000000;
+  background: linear-gradient(
+    124deg,
+    #ff0000,
+    #ffa500,
+    #ffff00,
+    #008000,
+    #0000ff,
+    #4b0082,
+    #ee82ee
+  );
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 8s ease infinite;
+  -z-animation: rainbow 8s ease infinite;
+  -o-animation: rainbow 8s ease infinite;
+  animation: rainbow 8s ease infinite;
 }
 
 @media screen and (max-width: 650px) {
@@ -697,5 +710,75 @@ div.submit {
 
   .footer-nav img {
     width: 40px;
+  }
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(
+    124deg,
+    #ff0000,
+    #ffa500,
+    #ffff00,
+    #008000,
+    #0000ff,
+    #4b0082,
+    #ee82ee
+  );
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 8s ease infinite;
+  -z-animation: rainbow 8s ease infinite;
+  -o-animation: rainbow 8s ease infinite;
+  animation: rainbow 8s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
   }
 }
